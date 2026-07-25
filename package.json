@@ -8,6 +8,37 @@
     "build": "electron-builder --win",
     "build:mac": "electron-builder --mac"
   },
+  "build": {
+    "appId": "com.vibesnap.app",
+    "productName": "VibeSnap",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "assets/logo.jpg"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "VibeSnap"
+    },
+    "files": [
+      "main/**/*",
+      "renderer/**/*",
+      "assets/**/*",
+      "package.json"
+    ],
+    "publish": {
+      "provider": "github",
+      "owner": "NDTindoy",
+      "repo": "screenshot-app"
+    }
+  },
   "keywords": [
     "screenshot",
     "lightshot",
@@ -18,6 +49,7 @@
   "author": "VibeCode",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^34.0.0"
+    "electron": "^34.0.0",
+    "electron-builder": "^25.1.8"
   }
 }
