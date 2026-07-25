@@ -1,0 +1,23 @@
+{
+  "name": "vibe-snap",
+  "version": "1.0.0",
+  "description": "A modern, lightweight screenshot and annotation desktop application for Windows & macOS",
+  "main": "main/index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win",
+    "build:mac": "electron-builder --mac"
+  },
+  "keywords": [
+    "screenshot",
+    "lightshot",
+    "annotation",
+    "utility",
+    "electron"
+  ],
+  "author": "VibeCode",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}
