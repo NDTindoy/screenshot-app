@@ -32,12 +32,7 @@
       "renderer/**/*",
       "assets/**/*",
       "package.json"
-    ],
-    "publish": {
-      "provider": "github",
-      "owner": "NDTindoy",
-      "repo": "screenshot-app"
-    }
+    ]
   },
   "keywords": [
     "screenshot",
