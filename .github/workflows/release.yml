@@ -31,9 +31,7 @@ jobs:
         run: npm install
 
       - name: Build Windows Installer
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx electron-builder --win -c.publish=null
+        run: npx electron-builder --win --publish never
 
       - name: Upload Installer to GitHub Release
         uses: softprops/action-gh-release@v2
